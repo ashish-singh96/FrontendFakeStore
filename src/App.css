@@ -1,0 +1,111 @@
+.signup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myForm{
+  width: 500px;
+  height: auto;
+  margin-top: 100px;
+}
+.btnmargin{
+  margin-bottom: 15px;
+  margin-left: 100px;
+}
+.showProduct{
+  height: auto;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+.card{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 150px; /* Change it based upon requirement */
+  object-fit:contain;
+}
+.showBtns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+#lblCartCount {
+    font-size: 13px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 6px;
+    vertical-align: top;
+    margin-left: -10px; 
+}
+.contact__form .form-control {
+  padding: 1.375rem .75rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border-radius: 0 !important;
+  border: 1px solid var(--secondary-color);
+}
+
+.contact__form input.form-control {
+  margin-bottom: 2em;
+  height: calc(2.5em + .75rem + 2px);
+}
+
+button.btn.ac_btn:hover {
+  color: var(--secondary-color);
+}
+
+.loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  z-index: 999999999;
+  background: var(--text-color);
+  transform: translateX(100%);
+  animation: shift-rightwards 1s ease-in-out infinite;
+  animation-delay: .3s;
+}
+
+@keyframes shift-rightwards {
+  0% {
+      transform: translateX(-100%);
+  }
+  40% {
+      transform: translateX(0%);
+  }
+  60% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
